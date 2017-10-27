@@ -1,0 +1,39 @@
+{%extends 'employee/base.html' %}
+{%load staticfiles %}
+
+{%block content%}
+                    
+                    <form action="/action_page.php" style="position: relative;top: 75px;">
+                        <div id="lab"><label for="empid">Employee ID</label>
+                            <input type="text" id="emp" name="empid" placeholder="Your Employee ID">
+                        </div>
+                        
+                        <div id="lab"><label for="password">Password</label>
+                            <input type="password" id="pass" name="password" placeholder="Your password">
+                        </div>
+                        
+                        <input type="submit" value="Sign-Up">
+                    </form>
+<img src="{% static 'images/symbol.jpg' %}" style="position: relative;top: -500px;left: 570px; height: 150px;width: 150px;z-index=-1;">
+{%endblock%}
+
+{%block card_content%}
+
+<h2>User Details</h2>
+      </header>
+      <div class="w3-container" style="padding-top: 5%;overflow: hidden;">
+        <form action="/action_page.php">
+                        
+                        <div id="lab"style="margin-left: 7%;"><label for="usrname">UserName</label>
+                            <input type="text" id="usrname" name="username" placeholder="Your Username" style="margin-left: 2.5%;">
+                        </div>
+                        
+                        <div id="lab" style="padding-top: 5%;margin-left: 7%;"><label for="password">Password</label>
+                            <input type="password" id="pass" name="password" placeholder="Your password" style="margin-left: 4%;">
+                        </div>
+                        
+            <div id="lab" ><input type="submit" value="Submit">
+            </div></form>
+        </div>
+{%endblock%}
+    

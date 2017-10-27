@@ -1,0 +1,16 @@
+{%extends 'users/base.html' %}
+
+{%block content%}
+                    <form action="sign_in_form" method="post">
+                                               {%csrf_token%}
+                        <div id="lab"><label for="usrname">UserName</label>
+                            <input type="text" id="usrname" name="username" placeholder="Your Username">
+                        </div>
+                        
+                        <div id="lab"><label for="password">Password</label>
+                            <input type="password" id="pass" name="password" placeholder="Your password">
+                        </div>
+                        
+                        <input type="submit" value="Login">
+                    </form>
+{%endblock%}

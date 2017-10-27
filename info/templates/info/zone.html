@@ -1,0 +1,29 @@
+{%extends 'employee/base.html' %}
+{%load staticfiles%}
+{%block content%}
+                    <img src="{% static 'images/symbol.jpg' %}" style="position: relative;top: 40px;left: 580px; height: 150px;width: 150px;">
+                    <div class="frm" style="margin-top:-2.5%;padding-top:2.5%;">
+                       <div id="lab"><label for="zone">Zone</label>
+                            <select id="zn" name="zone">
+                                <option value="1">ZONE 1: MYLAPORE</option>
+                                <option value="2">ZONE 2: PERIYAR NAGAR</option>
+                                <option value="3">ZONE 3: NUNGAMBAKKAM</option>
+                            </select>
+                        </div>
+                        
+                        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black" style="margin-top: 5%;margin-left: 42%;">Submit</button>
+                        
+        </div>
+{%endblock%}
+{%block card_content%}
+        <h2>ZONE 1: MYLAPORE</h2>
+      </header>
+      <div class="w3-container">
+        <p1>Area: 11000 sq.Km<br/>Population: 20000<br/>Number Of Lakes: 10<br/>Number Of Parks: 20<br/>Number Of Schools:15</p1>
+        <p>OFFICIAL INFORMATION:</p>
+        <p2>Zone Head: Mr.Subaiyya<br/>Engineer Head:Ms.Sumitha Reddy<br/>Sanitary Inspector:Mr.Vijay Malya</p2>  
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Greater Chennai Corporation</p>
+      </footer>
+{%endblock%}

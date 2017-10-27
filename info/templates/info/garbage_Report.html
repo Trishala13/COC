@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Corporation Of Chennai</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="zone.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    
+    
+    <body>
+        
+        <ul>
+            <li><img src="download.jpg"></li>
+            <li><img src="image.jpg"></li>
+        </ul>
+        
+        <div class="news">
+            <div class="w3-sidebar w3-bar-block w3-animate-left w3-light-grey" style="display:none;z-index:5;width:225px;font-style: italic;font-weight: bold;" id="mySidebar">
+                <a href="zone.html" class="w3-bar-item w3-button w3-light-grey" ><i class="fa fa-sticky-note-o"></i>Zone Details</a>
+            <a href="division.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-sticky-note-o"></i>Division Details</a>
+            <a href="official-login.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-vcard-o"></i>Official Login</a>
+            <a href="sign-in.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-user-circle-o"></i>User login</a>
+            <a href="sign-up.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-user-plus"></i>User Sign-Up</a>
+            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-pencil-square-o"></i>Register Complaint</a>
+            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-trash-o"></i>Garbage Report</a>
+            </div>
+
+<!-- Page Content -->
+            <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+            <div class="bt">
+                <button class="w3-button w3-white w3-medium" onclick="w3_open()">&#9776;</button>
+            </div>
+            
+            <div class="bar"><marquee behavior="scroll" direction="left">NEWS: HTML scrolling text... </marquee></div>
+            
+            <div id="tg">Zone Details</div></div>
+        
+            <div class="main">
+                <div class="fm">
+                    <img src="symbol.jpg" style="position: relative;top: 65px;left: 600px; height: 150px;width: 150px;">
+                    <div class="frm">
+                       <div id="lab"><label for="zone">Zone</label>
+                            <select id="zn" name="zone">
+                                <option value="1">ZONE 1: MYLAPORE</option>
+                                <option value="2">ZONE 2: PERIYAR NAGAR</option>
+                                <option value="3">ZONE 3: NUNGAMBAKKAM</option>
+                            </select>
+                        </div>
+                        
+                        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black" style="margin-top: 5%;margin-left: 42%;">Submit</button>
+                        
+        </div>
+                </div>
+        </div>
+        <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>ZONE 1: MYLAPORE</h2>
+      </header>
+      <div class="w3-container">
+        <p1>Area: 11000 sq.Km<br/>Population: 20000<br/>Number Of Lakes: 10<br/>Number Of Parks: 20<br/>Number Of Schools:15</p1>
+        <p>OFFICIAL INFORMATION:</p>
+        <p2>Zone Head: Mr.Subaiyya<br/>Engineer Head:Ms.Sumitha Reddy<br/>Sanitary Inspector:Mr.Vijay Malya</p2>  
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Greater Chennai Corporation</p>
+      </footer>
+    </div>
+  </div>
+                
+        <script>
+            var modal = document.getElementById('id01');
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+        <script>
+            function w3_open() 
+            {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+            function w3_close() 
+            {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+        </script>
+    </body>
+</html>

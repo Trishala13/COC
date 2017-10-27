@@ -1,0 +1,44 @@
+
+{%extends 'users/base.html' %}
+{% load staticfiles %}
+    {%block content%}
+
+                    <form action="complaint_form" method="post" style="position: relative;top: 50px;" >
+                                               {%csrf_token%}
+                        <div id="lab"><label for="Zone">Zone</label>
+                            <select id="zone" name="zone" style="margin-left: 15.5%;margin-top: 5%;">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+                        </div>
+      
+                        <div id="lab"><label for="Division">Division</label>
+                           <select id="division" name="division" style="margin-left: 11%;margin-top: 5%;">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+                        </div>
+                        
+                        <div id="lab"><label for="Department">Department</label>
+                            <select id="department" name="department" style="margin-left: 4%;margin-top: 5%;">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+                        </div>
+                        
+                        <div id="lab"><label for="details">Details</label>
+                        <input type="text" id="details" name="details" style="margin-left: 11.5%;margin-top: 5%;">
+                        </div>
+                    
+
+                        <input type="submit" value="Submit">
+                    </form>
+                    <img src="{% static 'images/symbol.jpg' %}" style="position: relative;top: -680px;left: 45%; height: 150px;width: 150px;">
+                    
+                        
+        {%endblock%}
+                
+        
